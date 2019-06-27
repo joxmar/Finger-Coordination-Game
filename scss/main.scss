@@ -1,0 +1,38 @@
+@charset "UTF-8";
+/*
+Jorge Elvir framework
+*/
+
+// configuration
+@import "config/variables";
+@import "config/mixins";
+
+// base resets
+@import "base/normalize";
+@import "base/base";
+@import "base/typography";
+@import "base/helpers";
+
+
+// layout
+@import "layout/grid";
+// page specific layouts will go here
+
+// navigation pick one
+@import "navigation/responsivenav";
+@import "navigation/horizontal";
+@import "navigation/vertical";
+
+// elements
+@import "elements/forms";
+@import "elements/buttons";
+@import "elements/tables";
+@import "elements/lists";
+
+//  vendors
+@import "vendors/calendar";
+
+
+// theme
+@import "theme/game-styles";
+

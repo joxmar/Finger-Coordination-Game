@@ -1,0 +1,31 @@
+.wrapper {
+	display: flex;
+	flex-flow: row nowrap;
+	min-height: 100%;	
+}
+
+.game-nav {
+	width: 20%;
+}
+
+.fretboard {
+	align-items: stretch;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	padding: 2%;
+	width: 80%;
+
+	.finger {
+		background: linear-gradient(#8ED4F1, #84F8B2);
+		border-radius: 100px;
+		box-shadow: 0 3px 6px rgba(142, 212, 241, .43);
+		width: 20%;	
+
+		&:disabled {
+			background: white;
+			border: 1px solid #E9E9E9;
+			box-shadow: 0 3px 6px rgba(152, 152, 152, .13);			
+		}	
+	}
+}

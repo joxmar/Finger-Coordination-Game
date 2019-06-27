@@ -1,0 +1,63 @@
+// calendar widget by jqueryUI
+.ui-datepicker{
+	.ui-datepicker-header{
+		align-content: center;
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: space-between;
+	}
+	.ui-datepicker-title{
+		align-self: center;
+		font-size: 1em;
+		font-weight: bold;
+		order:2;
+		text-transform: uppercase;
+	}
+	.ui-datepicker-prev{
+		align-self:left;
+		order:1;
+	}
+	.ui-datepicker-next{
+		align-self:right;
+		order:3;
+	}
+	.ui-datepicker-calendar{
+		th,td{
+			border-style:none;
+			text-align: center;
+			color:$color--dark;
+
+			a{
+				color:$color--dark;			
+				display: block;
+				padding: .375em;
+				text-decoration: none;
+			}
+		}
+		.ui-datepicker-week-end{
+			color:$color--error;
+
+			a{
+				color:$color--error;
+			}
+		}
+		.ui-datepicker-current-day{
+			a{
+				background: $color--dark;
+				color:white;
+				transition: all 0.3s ease-in-out;
+			}
+		}
+		.ui-datepicker-unselectable{
+			color:$light--gray;
+		}
+	}
+}
+
+// multi calendars
+.ui-datepicker-multi {
+  display: flex!important; //ugh!
+  flex-flow: row nowrap;
+	justify-content: space-between;
+	width: 100% !important; //ugh!
+}

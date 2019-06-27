@@ -1,0 +1,39 @@
+// header/vertical
+// logo
+// - navigation/ visible/ vertical
+// - - ul/row/vertical
+// - - - links
+// - - - - dropdowns
+// - hamburger/hidden
+
+@include for-size(desktop-up) {
+	.header__main--vertical{
+		flex-flow: column wrap;
+		align-items: left;
+	}
+	.header__main--vertical .hamburger-btn{
+		display: none;
+	}
+	.header__nav--vertical{
+		background:none;
+		height: auto;
+		opacity:1;
+		position: relative;
+		visibility:visible;
+		width: auto;
+		z-index: auto;
+
+		ul{
+			flex-flow: column wrap;
+			height: auto;
+
+			li{
+				text-align:left;
+
+				a{
+					font-size: 1em;
+				}
+			}
+		}
+	}
+}

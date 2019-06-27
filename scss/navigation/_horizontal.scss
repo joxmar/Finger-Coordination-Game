@@ -1,0 +1,56 @@
+// header/horizontal
+// logo
+// - navigation/ visible/ inline
+// - - ul/row/inline
+// - - - links
+// - - - - dropdowns
+// - hamburger/hidden
+
+@include for-size(desktop-up) {
+	.header__main--horizontal .hamburger-btn{
+		display: none;
+	}
+	.header__nav--horizontal{
+		background:none;
+		flex:3;
+		height: auto;
+		opacity:1;
+		position: relative;
+		visibility:visible;
+		width: auto;
+		z-index: auto;
+
+		ul{
+			flex-flow: row wrap;
+  		justify-content: space-between;
+			height: auto;
+
+			a{
+				font-size: 1em;
+			}
+			li{
+				text-align: left;
+			}
+			// sub menus
+			li > ul{
+				display: none;				
+				margin: 0;
+				position: absolute;
+				left: auto;
+				top:auto;
+				width: auto;
+				@include card-style();
+
+				li{					
+					text-align: left;
+					a{
+						padding: .375em;
+					}			
+				}
+			}
+			li:hover > ul{
+				display: block;
+			}
+		}
+	}
+}

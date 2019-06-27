@@ -1,0 +1,43 @@
+/* layout */
+// Container
+.container{	
+	margin: 0 auto;
+	position:relative;
+	width: 80%;
+}
+
+.container-full{
+	margin: 0 auto;
+	position:relative;
+	padding: 0 2%;
+}
+
+/* flex grid stuff */
+.flex-grid-flx{
+  display:flex;
+  flex-wrap:wrap;
+  margin-bottom:20px;
+  width: 100%;
+}
+.flx__col{
+  flex:1;
+  margin: 0 0.5%;
+
+  &--70p{
+    flex:2
+  }
+
+  &--80p{
+    flex:3;
+  }
+}
+
+/* Mobile portrait */
+@media only screen and (max-width : 480px) {
+  .flex-grid-flx{
+    display: block;
+  }
+  .flx__col{
+    margin-bottom: 15px;
+  }
+}
